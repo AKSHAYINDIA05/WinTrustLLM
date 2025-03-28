@@ -143,3 +143,5 @@ def reset_session(session_id):
     else:
         return jsonify({"error": "Session ID not found"}), 400
 
+if __name__ == "__main__":
+    app.run()
