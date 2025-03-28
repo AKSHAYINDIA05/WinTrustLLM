@@ -75,7 +75,7 @@ chatbot_prompt = PromptTemplate(
 chain = chatbot_prompt | llm | StrOutputParser()
 
 
-METADATA_URL_TEMPLATE = "https://wintrustapi-bpd9b7bdbdbkhtaj.westindia-01.azurewebsites.net/{session_id}/get_metadata"
+METADATA_URL_TEMPLATE = "https://wintrust-api.onrender.com/{session_id}/get_metadata"
 
 @app.route("/", methods=["GET"])
 def home():
